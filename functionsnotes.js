@@ -53,9 +53,39 @@
 
 
 
-function sum(num1, num2){
+// function sum(height,length){
+//
+//     console.log(`${height}*${length}=${height * length}`);
+// }
+// sum(40, 15);
+// sum(40, 15);
 
-    console.log(`${num1}+${num2}=${num1+num2}`);
-}
-sum(7, 10);
-sum(27, 1);
+
+
+
+// function sum(pie,radius){
+// // //
+// // //     console.log(`${pie}*${radius}*${radius}=${pie * radius*radius}`);
+// // // }
+// // // sum(3.14, 15);
+// // // sum(3.14, 2);
+
+//
+// function sum(pie,radius){
+//
+//     console.log(`${pie}*${radius}*${radius}=${pie * radius*radius}`);
+// }
+// sum(3.14, 15);
+// sum(3.14, 2);
+
+
+
+
+
+ // function sum(num1,num2){
+ //    if (num1 < num2 );
+ //    console.log (num1);
+ //
+ //     console.log(`${num1}*${num2}=${num1 > num2}`);
+ // }
+ // sum(40, 15);
