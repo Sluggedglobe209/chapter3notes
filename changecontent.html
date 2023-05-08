@@ -1,0 +1,43 @@
+div class="container">
+<div class="content">
+    <h1>Change Content Notes</h1>
+    <div class="row">
+        <div>
+            <label for="First Name">First Name</label>
+            <input type="text" id="first" name="First_Name" placeholder="Jane">
+        </div>
+        <div>
+            <label for="Last Name">Last name</label>
+            <input type="text" id="last" name="Last_Name" placeholder="Doe">
+        </div>
+        <button name="clear">Clear</button>
+        <p class="hidden"></p>
+    </div>
+</div>
+</div>
+</div>
+<script>
+    const FirstName = document.getElementById(`first`)
+    const LastName = document.getElementById(`last`)
+    const Full = document.getElementById(`p`)
+    const clearButton = document.querySelector(`[name="clear"}`);
+
+
+    FirstName.addEventListener(`change`, function(e){
+        let first = FirstName.value;
+        let last = LastName.value;
+        let FullName = `hello ${First} ${Last}!`;
+        if (FullName.length>1){
+            full.classList.remove("hidden")
+        } else{
+            full.classList.add("hidden")
+        }
+        full.textContent =FullName
+    })
+
+    clearButton.addEventListener(`click`, function(e)){
+        FirstName.value = ""
+        LastName.value = ""
+        full.textContent = ""
+    }
+</script>

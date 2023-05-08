@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Change Contents of an element notes</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Change Content Notes</h1>
+        <div class="row">
+            <div>
+                <label for="First Name">First Name</label>
+                <input type="text" id="first" name="First_Name" placeholder="Jane">
+                <div>
+                    <label for="Last Name">Late name</label>
+                    <input type="text" id="last" name="Last_Name" placeholder="Doe">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const FirstName = document.getElementById(`first`)
+    const LastName = document.getElementById(`last`)
+    const Full = document.getElementById(`p`)
+
+
+    FirstName.addEventListener(`change`, function(e)){
+        let first = FirstName.value;
+        let last = LastName.value;
+        let FullName = `hello ${First} ${Last}!`;
+        full.textContent =FullName
+    }
+</script>
+
+</body>
+</html>
