@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>updated color picker</title>
+    <title>Updated Color Picker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">
     <div class="content">
-        <p>avater</p>
+        <p>Placeholder Kris</p>
         <div class="row">
-            <button id="avatar1">goku</button>
-            <button id="avatar2"></button>
-            <button id="avatar3"></button>
+            <h3>Background</h3>
+            <input type="color" id="bg" value="#FFFFFF">
         </div>
         <div class="row">
             <h3>Text!</h3>
@@ -21,26 +20,27 @@
         <button id="clear">CLEAR</button>
     </div>
 </div>
-<script>
-    const content = document.querySelector(`.content`);
-    const bg = document.getElementById(`bg`);
-    const txt = document.getElementById(`txt`);
-    const clear = document.getElementById(`clear`);
-    const picture =document.getElementById(`id`)
 
-    bg.addEventListener(`change`, function(e){
+<script>
+    const content = document.querySelector('.content');
+    const bg = document.getElementById('bg');
+    const txt = document.getElementById('txt');
+    const clear = document.getElementById('clear');
+
+    bg.addEventListener('change', function (e) {
         content.style.backgroundColor = e.target.value;
     });
-    txt.addEventListener(`change`, function(e){
+
+    txt.addEventListener('change', function (e) {
         content.style.color = e.target.value;
     });
-    clear.addEventListener(`click`, function(e){
-        content.style.backgroundColor = `white`;
-        bg.value =`#FFFFFF`
-        content.style.color = `black`;
-        txt.value =`#000000`
-    });
 
+    clear.addEventListener('click', function (e) {
+        content.style.backgroundColor = 'white';
+        bg.value = '#FFFFFF';
+        content.style.color = 'black';
+        txt.value = "#000000";
+    })
 
 </script>
 </body>
